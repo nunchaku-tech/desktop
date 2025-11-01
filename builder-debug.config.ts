@@ -11,7 +11,7 @@ const debugConfig: Configuration = {
   beforeBuild: './scripts/preMake.js',
   win: {
     icon: './assets/UI/Comfy_Logo.ico',
-    target: 'zip',
+    target: ['zip', 'portable'],
     signtoolOptions: null,
   },
   mac: {
