@@ -6,12 +6,13 @@ const debugConfig: Configuration = {
     { from: './assets/ComfyUI', to: 'ComfyUI' },
     { from: './assets/uv', to: 'uv' },
     { from: './assets/UI', to: 'UI' },
+    { from: './assets/desktop-ui', to: 'desktop-ui' },
     { from: './assets/requirements', to: 'requirements' },
   ],
   beforeBuild: './scripts/preMake.js',
   win: {
     icon: './assets/UI/Comfy_Logo.ico',
-    target: 'zip',
+    target: ['zip', 'portable'],
     signtoolOptions: null,
   },
   mac: {
